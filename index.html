@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/brands-extended.css">
+    <link rel="stylesheet" href="css/sensitive-content.css">
 
     <!-- LittleLink Extended Stylesheet (Optional) -->
     <!-- <link rel="stylesheet" href="css/brands-extended.css"> -->
@@ -106,6 +108,18 @@
 
               <!-- Generic Email -->
               <a class="button button-default" href="mailto:glimmerpuppy@glimmerpuppy.com" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Email Us</a>
+              <div class="slide-container" data-continue-url="https://example.com">
+                <a class="button button-default sensitive-trigger" href="javascript:void(0)">
+                  <img class="icon" aria-hidden="true" src="images/icons/generic-warning.svg" alt="Warning Icon">
+                  Sensitive Content
+                </a>
+                <div class="sensitive-panel">
+                  <div class="sensitive-panel__content">
+                    <p>This link may contain content that is not appropriate for all audiences.</p>
+                    <button class="button button-default sensitive-continue">Continue</button>
+                  </div>
+                </div>
+              </div>
       </div>
 
       <!-- Feel free to add your own footer information, including updating `privacy.html` to reflect how your LittleLink fork is set up -->
@@ -115,7 +129,7 @@
 
     </div>
   </div>
-
+<script src="js/sensitive-content.js"></script>
 </body>
 
 </html>
